@@ -8,13 +8,11 @@ header {
     text-align: center;
     padding: .5rem;
     color: #fff;
-    text-shadow: #00E3FF;
     border: 3pt solid #EE701F;
-
 }
 
 header > img {
-    width: 100px;
+    width: 135px;
     height: auto;
     vertical-align: middle;
 }
@@ -31,14 +29,14 @@ header > img {
 .subheading {
     font-size: 1.1rem;
     color: #fff;
-    font-style: italic
+    font-style: italic;
+    vertical-align: text-top;
 
 }
 
 .currentweather {
     display: inline-block;
     margin: 1rem 0 1rem 5rem;
-    padding-block-end: 1.2 rem;
     vertical-align: middle;
     color: #ffffff;
     background-color: #46494c;
@@ -46,7 +44,7 @@ header > img {
 }
 
 .currentweather img {
-    width: 75px;
+    width: 60px;
     height: auto;
     vertical-align: middle;
 }
@@ -54,6 +52,5 @@ header > img {
 .currentweather p {
     display: inline-block;
     float: right;
-    font-size: 1.0rem;
-    
+    font-size: 1.2rem;
 }
