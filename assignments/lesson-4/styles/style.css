@@ -54,3 +54,65 @@ header > img {
     float: right;
     font-size: 1.2rem;
 }
+
+nav {
+    overflow: hidden;
+    background-color: #46494C
+}
+
+nav a {
+    float: left;
+    color: #00B5A8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.0rem;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #EE701F;
+    font-weight: bolder;
+}
+
+.hero img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+}
+
+main {
+    background-color: #fff;
+    color: #EE701F;
+    border: 3pt solid #EE701F;
+    padding: 14px 16px;
+}
+
+main h1 {
+    color: #00B5A8;
+
+}
+
+main h2 {
+    color: #46494C;
+}
+
+section {
+    border: 3pt solid #EE701F;
+    padding: 14px 16px;
+}
+
+article {
+    border: 3pt solid #EE701F;
+    padding: 14px 16px;
+}
+
+footer {
+    padding: .5rem;
+    background-color: #00B5A8;
+    color: white;
+    text-align: center;
+    border: 3pt solid #EE701F;
+}
+
+}
