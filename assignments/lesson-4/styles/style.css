@@ -1,0 +1,59 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color: #00B5A8;
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+    text-shadow: #00E3FF;
+    border: 3pt solid #EE701F;
+
+}
+
+header > img {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headertext h1 {
+    font-size: 2.5rem;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: #fff;
+    font-style: italic
+
+}
+
+.currentweather {
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding-block-end: 1.2 rem;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #46494c;
+    border: 3pt solid #EE701F;
+}
+
+.currentweather img {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.currentweather p {
+    display: inline-block;
+    float: right;
+    font-size: 1.0rem;
+    
+}
