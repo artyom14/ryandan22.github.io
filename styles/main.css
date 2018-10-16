@@ -34,11 +34,12 @@ header, footer, footer a {
 }
 
 header img {
-    width: 420px;
+    width: 500px;
     height: auto;
     float: right;
 }
 
 footer {
     font-size:1.0rem;
+    float: center;
 }
