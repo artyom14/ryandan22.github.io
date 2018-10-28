@@ -50,7 +50,7 @@ header > img {
 }
 
 .currentweather p {
-    display: inline-block;
+    /** display: inline-block; **/
     float: right;
     font-size: 1.2rem;
 }
@@ -88,6 +88,12 @@ main h1 {
 
 main h2 {
     color: #46494C;
+}
+
+.forecast {
+    display: block;
+    border: 3pt solid #EE701F;
+    padding: 14px 16px;
 }
 
 .hero img {

@@ -50,7 +50,7 @@ header > img {
 }
 
 .currentweather p {
-    display: inline-block;
+   /** display: inline-block; **/
     margin: 1rem 1rem 1rem 1rem;
     float: right;
     font-size: 1.2rem;
@@ -96,6 +96,10 @@ main h1 {
 
 main h2 {
     color: #46494C;
+}
+
+.forecast {
+    display: none;
 }
 
 section {
