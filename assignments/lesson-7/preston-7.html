@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+        <meta charset="utf-8">
+        <title>The Weather Watcher | The Town of Preston </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Preston Page per Lesson 6">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (min-width: 300px)" href="styles/small-7.css">
+        <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles/large-7.css">
+        <script src="scripts/currentdate.js"></script>
+
+  </head>
+    <body>
+        <header>
+            <img src="images/The_Weather_Watcher_Logo_1.png" alt="The Weather Watcher Logo">
+            <div class="headertext">
+                <h1>The Weather Watcher</h1>
+                <div class="subheading">Providing accurate up-to-the-minute weather conditions for your area</div>
+            </div>
+            <div class="currentweather">
+                <img src="images/if_Sunny_47314.png" alt="current weather conditions">
+                <p>Sunny</p>
+            </div>
+        
+        </header>
+        
+            <nav>
+                <a href="#" onclick="">Menu</a>
+                <a href="#">Home</a>
+                <a href="#">Preston</a>
+                <a href="#">Soda Springs</a>
+                <a href="#">Fish Haven</a>
+                <a href="#">Storm Center</a>
+                <a href="#">Gallery</a>
+            </nav>
+
+            <!-- <nav>
+                    <ul class="navbar">
+                      <li>
+                        <a href="#" onclick="">Menu</a>
+                      </li>
+                      <li>
+                        <a href="#">Home</a>
+                      </li>
+                      <li>
+                        <a href="#">Preston</a>
+                      </li>
+                      <li>
+                        <a href="#">Soda Springs</a>
+                      </li>
+                      <li>
+                        <a href="#">Fish Haven</a>
+                      </li>
+                      <li>
+                        <a href="#">Storm Center</a>
+                      </li>
+                      <li>
+                        <a href="#">Gallery</a>
+                      </li>
+                    </ul>
+                  </nav>  -->
+        
+        <main>
+            <h2>Preston</h2>
+            <!-- <div class="hero">
+                <img src="images/if_batman_.png" alt="Hero Pic (Batman)">
+            </div> -->
+            <div class="hero">
+                    <img src="images/franklin-original.jpeg" alt="Hero Pic (Preston1)"> <!-- class="" -->
+             </div>      
+                    <section class="weathersummary">
+                      <h3>Weather Summary</h3>
+                      <div class="weatherdetails">
+                        <p class="label">Currently:</p>
+                        <p class="value">Sunny</p>
+                        <p class="label">Temperature:</p>
+                        <p class="value">76 &deg;F</p>
+                        <p class="label">Humidity:</p>
+                        <p class="value">69%</p>
+                        <p class="label">Precipitation:</p>
+                        <p class="value">0 inches</p>
+                        <p class="label">Wind Speed:</p>
+                        <p class="value">5 mph</p>
+                        <p class="label">Wind Chill:</p>
+                        <p class="value"><script src="/assignments/lesson-7/scripts/windchill.js"></script></p>
+                      </div>
+                    </section>
+        </main>
+
+        <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Day</th>
+                      <th>Wed</th>
+                      <th>Thu</th>
+                      <th>Fri</th>
+                      <th>Sat</th>
+                      <th>Sun</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Forecast</th>
+                      <td>89&deg;F</td>
+                      <td>87&deg;F</td>
+                      <td>78&deg;F</td>
+                      <td>75&deg;F</td>
+                      <td>72&deg;F</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+        
+        <article>
+            <h3> Articles</h3>
+            <p><!-- News articles- placement holder --></p>
+        </article>
+        
+        <footer>
+            <p>Contact Information</p>
+            <p><!-- contact info here, what format is needed?--></p>
+            &copy;2018 The Weather Watcher
+            <p><script>
+                document.getElementById("dateR").innerHTML = "Current Date";
+                </script></p>
+            <div class="footer">
+            </div>
+        </footer>
+     </body>
+</html>
