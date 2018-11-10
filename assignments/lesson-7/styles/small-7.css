@@ -102,6 +102,12 @@ main h2 {
     display: none;
 }
 
+.pictureGallery {
+    align-items: center;
+    width: auto;
+    padding: 3%;
+}
+
 section {
     border: 3pt solid #EE701F;
     padding: 14px 16px;
