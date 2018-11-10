@@ -104,6 +104,13 @@ main h2 {
     padding: 14px 16px;
 }
 
+.pictureGallery {
+    align-items: center;
+    width: 250px;
+    height: auto;
+    padding: 3%;
+}
+
 .hero img {
     width: 500px;
     height: auto;

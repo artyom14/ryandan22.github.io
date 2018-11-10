@@ -104,7 +104,8 @@ main h2 {
 
 .pictureGallery {
     align-items: center;
-    width: auto;
+    width: 250px;
+    height: auto;
     padding: 3%;
 }
 
