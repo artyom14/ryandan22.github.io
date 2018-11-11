@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+        <meta charset="utf-8">
+        <title>The Weather Watcher | The Town of Preston </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Preston Page per Lesson 7">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="styles/small-7.css">
+        <link rel="stylesheet" href="styles/large-7.css">
+        <link rel="stylesheet" href="styles/medium-7.css">
+
+  </head>
+    <body>
+        <header>
+            <img src="images/The_Weather_Watcher_Logo_1.png" alt="The Weather Watcher Logo">
+            <div class="headertext">
+                <h1>The Weather Watcher</h1>
+                <div class="subheading">Providing accurate up-to-the-minute weather conditions for your area</div>
+            </div>
+            <div class="currentweather">
+                <img src="images/if_Sunny_47314.png" alt="current weather conditions">
+                <p>Sunny</p>
+            </div>
+        
+        </header>
+        
+            <nav>
+                <a href="#" onclick="">Menu</a>
+                <a href="#">Home</a>
+                <a href="preston-7.html">Preston</a>
+                <a href="#">Soda Springs</a>
+                <a href="#">Fish Haven</a>
+                <a href="stormcenter.html">Storm Center</a>
+                <a href="gallery-7.html">Gallery</a>
+            </nav>
+
+            <!-- <nav>
+                    <ul class="navbar">
+                      <li>
+                        <a href="#" onclick="">Menu</a>
+                      </li>
+                      <li>
+                        <a href="#">Home</a>
+                      </li>
+                      <li>
+                        <a href="#">Preston</a>
+                      </li>
+                      <li>
+                        <a href="#">Soda Springs</a>
+                      </li>
+                      <li>
+                        <a href="#">Fish Haven</a>
+                      </li>
+                      <li>
+                        <a href="#">Storm Center</a>
+                      </li>
+                      <li>
+                        <a href="#">Gallery</a>
+                      </li>
+                    </ul>
+                  </nav>  -->
+        
+        <main>
+            <h2>Storm Center</h2>
+            <div class="stormcenter">
+                <p>Are you experiencing severe weather in your area? Please fill out this form to let us know and get the info out on our site.</p>
+                <p><em>*</em>Indicates Information Required</p>
+            </div>
+            <div class="stormcenterID">
+                <form action="thanks.html" method="get" target="_self">
+        
+                    <fieldset class="personInfo">
+                        <legend>Personal Information:</legend>
+        
+                        <label>
+                            <span class="must"><em>*</em>Full Name:</span><br>
+                            <input type="text" name="fname" placeholder="example: John Doe" pattern="[a-zA-Z]{.5}" required="" id="fullname"></label><br>
+        
+                        <label>
+                            <span class="must">
+                                <em>*</em>Email Address:</span><br>
+                            <input type="text" name="email" placeholder="example: JohnDoe@examplemail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" id="eaddress"></label><br>
+                        <label>
+                            <span class="must">
+                                <em>*</em>Phone Number</span><br>
+                            <input type="tel" name="phone" placeholder="###-###-####" pattern="[0-9]{10}" required="" id="telephone">
+                        </label><br>
+                        <label>
+                            <span class="must">
+                                <em>*</em>Zip Code</span><br>
+                            <input type="number" name="zip" placeholder="example: 55555" required="" id="zcode">
+                        </label><br>
+                    </fieldset>
+        
+                    <fieldset class="stormInfo">
+                        <legend>Storm Information:</legend>
+        
+                        <label>
+                            <span class="stormDate">
+                                Storm Date:</span><br>
+                            <input type="date" name="sdate">
+                        </label><br>
+        
+                        <label>
+                            <span class="stormLevel">Storm Type: </span><br>
+                            <input list="stormlist" name="stormType" placeholder="example: Hurricane">
+                            <datalist id="stormlist">
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Hurricane"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist>
+                        </label><br>
+        
+                        <label for="rating">
+                            <span class="severe">Storm Severity:</span><br>
+                            <span id="sevstorm">Indicate the severity of the weather you are having from 1-10 (1 being ninor- 10 being very severe)</span>
+                            <input id="rating" name="severe" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" type="range">
+                        </label>
+                        <br>
+                        <span id="ratingvalue">1</span><br>
+        
+                        <label>
+                            <span id="stormRegion">Storm Region: </span><br>
+                            <select id="stormreg">
+                                <option disabled="" selected="">Select Region...</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </label><br>
+        
+                        <span class="danger">
+                            <span>User In-Danger Level:</span><br>
+                            <input type="radio" name="danger" value="Yes"> Yes<br>
+                            <input type="radio" name="danger" value="Maybe" checked=""> Maybe <br>
+                            <input type="radio" name="danger" value="No"> No <br>
+                            <br>
+                        </span>
+        
+                    </fieldset>
+        
+                    <fieldset class="aInfo">
+                        <legend>Additional Information</legend>
+                        <span></span>
+                        <textarea name="addinfo" placeholder="Please tell us any additional information here..."></textarea>
+                    </fieldset>
+        
+                    <div>
+                        <input type="submit" value="Submit" id="subbutton">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <footer>
+            <p>Contact Information</p>
+            <p><!-- contact info here, what format is needed?--></p>
+            &copy;2018 The Weather Watcher
+            <p><script>
+                document.getElementById("dateR").innerHTML = "Current Date";
+                </script></p>
+            <div class="footer">
+            </div>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/windchill.js"></script>
+            <script src="hamburger.js"></script>
+        </footer>
+     </body>
+</html>
