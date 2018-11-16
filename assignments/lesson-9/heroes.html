@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+
+    <header>
+
+        <h1>Danners</h1>
+        <p>Current City: Ocala, FL - Established: 2008</p></header>
+
+    </header>
+
+    <section>
+
+        <article>
+            <h2>Ryan L. Danner</h2>
+            <p>Family Title: Super Dad</p>
+            <p>Age: 36</p>
+            <p>Household Duties:</p>
+                <ul><li>Yard Work</li>
+                    <li>Take out the trash</li>
+                    <li>Clean the bathrooms</li>
+                </ul>
+        </article>
+        
+        <article>
+            <h2>Malaney Danner</h2>
+            <p>Family Title: Super Mom</p>
+            <p>Age: 34</p>
+            <p>Household Duties:</p>
+                <ul><li>Task Scheduler</li>
+                    <li>Family Chef</li>
+                    <li>Pays the bills</li>
+                </ul>
+        </article>
+            
+        <article>
+            <h2>Ryan M. Danner</h2
+            ><p>Family Title: Super Boy</p>
+            <p>Age: 3</p>
+            <p>Household Duties:</p>
+                <ul><li>Picks up toys</li>
+                    <li>Helps put away dishes</li>
+                    <li>Helps Super Dad in the yard</li>
+                </ul>
+        </article>
+            
+        <article>
+            <h2>Aizlee Danner</h2>
+            <p>Family Title: Super Girl</p>
+            <p>Age: 6</p>
+            <p>Household Duties:</p>
+                <ul><li>Cleans her room</li>
+                    <li>Organizes toys</li>
+                    <li>Super Mom's Helper</li>
+                </ul>
+        </article>
+    </section>
+
+    <script>
+            var header = document.querySelector('header');
+            var section = document.querySelector('section');
+            var requestURL = "https://ryandan22.github.io/assignments/lesson-9/json/dannerfamily.json";
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+              var dannerFamily = request.response;
+              populateHeader(dannerFamily);
+              familyMembers(dannerFamily);
+            }
+            function populateHeader(jsonObj) {
+              var myH1 = document.createElement('h1');
+              myH1.textContent = jsonObj['familyName'];
+              header.appendChild(myH1);
+              var myPara = document.createElement('p');
+              myPara.textContent = 'Current City: ' + jsonObj['currentCity'] + ' // Married: ' + jsonObj['married'];
+              header.appendChild(myPara);
+            }
+            function familyMembers(jsonObj) {
+              var names = jsonObj['members'];
+              for(var i = 0; i < names.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myList = document.createElement('ul');
+                myH2.textContent = names[i].name;
+                myPara1.textContent = 'Family Title: ' + names[i].familyTitle;
+                myPara2.textContent = 'Age: ' + names[i].age;
+                myPara3.textContent = 'Household Duties:';
+                var dutiesList = names[i].duties;
+                for(var j = 0; j < dutiesList.length; j++) {
+                  var listItem = document.createElement('li');
+                  listItem.textContent = dutiesList[j];
+                  myList.appendChild(listItem);
+                }
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+                section.appendChild(myArticle);
+              }
+            }
+    </script>
+  </body>
+</html>

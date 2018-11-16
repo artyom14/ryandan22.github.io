@@ -1,0 +1,49 @@
+{
+    "familyName" : "Danners",
+    "currentCity" : "Ocala, FL",
+    "established" : 2008,
+     "active" : true,
+    "members" : [
+      {
+        "name" : "Ryan L. Danner",
+        "age" : 36,
+        "familyTitle" : "Super Dad",
+        "duties" : [
+              "Yard Work",
+              "Take out the trash",
+              "Clean the bathrooms"
+          ]
+      },
+      {
+        "name" : "Malaney Danner",
+        "age" : 34,
+        "familyTitle" : "Super Mom",
+        "duties" : [
+              "Task Scheduler",
+              "Family Chef",
+              "Pays the bills"
+          ]
+      },
+  
+      {
+        "name" : "Ryan M. Danner",
+        "age" : 3,
+        "familyTitle" : "Super Boy",
+        "duties" : [
+              "Picks up toys",
+              "Helps put away the dishes",
+              "Helps Super Dad in the yard"
+          ]
+      },
+          {
+        "name" : "Aizlee Danner",
+        "age" : 6,
+        "familyTitle" : "Super Girl",
+        "duties" : [
+              "Cleans her room",
+              "Organizes toys",
+              "Super Mom's Helper"
+          ]
+      }
+    ]
+  }
